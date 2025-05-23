@@ -2,27 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Vascularización del Miembro Superior</title>
+  <title>Vascularización Periférica</title>
   <style>
     body {
       font-family: Segoe UI, sans-serif;
       background-color: #f5f8fa;
       padding: 30px;
+      max-width: 900px;
+      margin: auto;
     }
-    h2 {
+    details {
+      margin-bottom: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    summary {
       background: #007acc;
       color: white;
       padding: 15px;
-      border-radius: 10px;
-      text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .content {
+      padding: 20px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin-top: 10px;
     }
     th, td {
       padding: 12px;
+      text-align: left;
       border-bottom: 1px solid #ddd;
     }
     th {
@@ -35,23 +51,74 @@
   </style>
 </head>
 <body>
-  <h2>3.1 Vascularización del miembro superior</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Vena</th>
-        <th>Diámetro óptimo</th>
-        <th>Profundidad</th>
-        <th>Relación anatómica</th>
-        <th>Aplicación clínica</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Cefálica</td><td>&gt; 3 mm</td><td>Superficial</td><td>Aislada</td><td>Catéter periférico o línea media</td></tr>
-      <tr><td>Basílica</td><td>&gt; 4 mm</td><td>Media</td><td>Cercana a arteria/nervio</td><td>Línea media con ecografía</td></tr>
-      <tr><td>Mediana cubital</td><td>2–3 mm</td><td>Superficial</td><td>Fosa antecubital</td><td>No apta para línea media</td></tr>
-      <tr><td>Axilar</td><td>&gt; 5 mm</td><td>Profunda</td><td>Paquete vasculonervioso</td><td>PICC</td></tr>
-    </tbody>
-  </table>
+  <details>
+    <summary>3.1 Vascularización del miembro superior</summary>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Vena</th>
+            <th>Diámetro óptimo</th>
+            <th>Profundidad</th>
+            <th>Relación anatómica</th>
+            <th>Aplicación clínica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cefálica</td><td>&gt; 3 mm</td><td>Superficial</td><td>Aislada</td><td>Catéter periférico o línea media</td></tr>
+          <tr><td>Basílica</td><td>&gt; 4 mm</td><td>Media</td><td>Cercana a arteria/nervio</td><td>Línea media con ecografía</td></tr>
+          <tr><td>Mediana cubital</td><td>2–3 mm</td><td>Superficial</td><td>Fosa antecubital</td><td>No apta para línea media</td></tr>
+          <tr><td>Axilar</td><td>&gt; 5 mm</td><td>Profunda</td><td>Paquete vasculonervioso</td><td>PICC</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details>
+    <summary>3.2 Vascularización del miembro inferior</summary>
+    <div class="content">
+      <ul>
+        <li><strong>Vena safena magna:</strong> superficial, trayecto medial desde pie hasta ingle. Útil en neonatos o adultos sin acceso superior.</li>
+        <li><strong>Vena femoral:</strong> vena profunda en triángulo femoral. Utilizada en pacientes críticos, alto riesgo de infección.</li>
+        <li><strong>Arteria femoral:</strong> eje arterial mayor, útil para acceso en UCI o emergencias, requiere técnica estéril y compresión efectiva.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>3.3 Identificación de vasos superficiales vs profundos</summary>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Vasos superficiales</th>
+            <th>Vasos profundos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ubicación</td><td>Subcutáneos</td><td>En planos musculares</td></tr>
+          <tr><td>Accesibilidad</td><td>Alta</td><td>Ecografía obligatoria</td></tr>
+          <tr><td>Relación con nervios</td><td>Mínima</td><td>Incluidos en paquetes vasculonerviosos</td></tr>
+          <tr><td>Uso clínico</td><td>Catéter periférico corto</td><td>Línea media, PICC, CVC</td></tr>
+          <tr><td>Visualización ecográfica</td><td>Colapsan fácilmente</td><td>Redondos, no colapsables</td></tr>
+          <tr><td>Complicaciones</td><td>Baja incidencia</td><td>Mayor riesgo de trombosis, hematoma</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details>
+    <summary>Recomendaciones clínicas</summary>
+    <div class="content">
+      <ul>
+        <li>Evitar puncionar en pliegues articulares (codo, muñeca) para prevenir flebitis.</li>
+        <li>El diámetro del catéter debe ser &lt; 45% del diámetro venoso para reducir riesgo de trombosis.</li>
+        <li>Preferir trayectos venosos directos hacia la cava superior en accesos de línea media o PICC.</li>
+        <li>Usar siempre guía ecográfica y Doppler para evitar estructuras arteriales o nerviosas.</li>
+        <li>No usar venas con trayectos tortuosos, bifurcaciones o flujo lento para accesos largos.</li>
+      </ul>
+    </div>
+  </details>
 </body>
 </html>
