@@ -1,1 +1,36 @@
+<div style="font-family: Segoe UI, sans-serif; background-color: #f5f8fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 100%;">
+  <label for="toggle" style="display:block; cursor:pointer; background: #007acc; color: white; padding: 15px; border-radius: 10px; text-align: center; font-size: 18px;">
+    3.1 Vascularización del miembro superior (clic para ver)
+  </label>
+  <input type="checkbox" id="toggle" style="display:none;">
+  <div style="margin-top: 20px; display:none;" id="content-box">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #e1f0fc; color: #007acc;">
+          <th style="padding:12px;">Vena</th>
+          <th style="padding:12px;">Diámetro óptimo</th>
+          <th style="padding:12px;">Profundidad</th>
+          <th style="padding:12px;">Relación anatómica</th>
+          <th style="padding:12px;">Aplicación clínica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:12px; font-weight:bold;">Cefálica</td><td>> 3 mm</td><td>Superficial</td><td>Aislada, sin riesgo</td><td>Catéter periférico corto o línea media si visible</td></tr>
+        <tr><td style="padding:12px; font-weight:bold;">Basílica</td><td>> 4 mm</td><td>Media</td><td>Próxima a arteria y nervio</td><td>Línea media, requiere guía ecográfica</td></tr>
+        <tr><td style="padding:12px; font-weight:bold;">Mediana cubital</td><td>2–3 mm</td><td>Superficial</td><td>Fosa antecubital</td><td>Extracciones. No apta para línea media</td></tr>
+        <tr><td style="padding:12px; font-weight:bold;">Axilar</td><td>> 5 mm</td><td>Profunda</td><td>Paquete vasculonervioso</td><td>Objetivo de PICC</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <style>
+    #toggle:checked + #content-box {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</div>
 
